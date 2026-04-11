@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import Hero from '@/components/Hero'
 import QuickAccess from '@/components/QuickAccess'
 import DoctorsSection from '@/components/DoctorsSection'
