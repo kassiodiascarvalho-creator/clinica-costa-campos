@@ -1,0 +1,30 @@
+generated_at: 2026-04-10
+project_name: clinica-costa-campos
+github_repo: https://github.com/kassiodiascarvalho-creator/clinica-costa-campos
+visibility: private
+
+os:
+  platform: windows
+  version: Windows 11 Pro 10.0.26100
+
+cli_tools:
+  essential:
+    git: { status: ok, version: 2.53.0 }
+    gh: { status: ok, version: 2.88.0 }
+    node: { status: ok, version: 25.6.1 }
+    npm: { status: ok, version: 11.9.0 }
+  infrastructure:
+    supabase: { status: ok, version: 2.84.2, updated_from: 2.78.1 }
+    docker: { status: ok, version: 27.3.1 }
+  quality:
+    coderabbit: { status: unknown, note: WSL não disponível no contexto atual }
+  optional:
+    pnpm: { status: not_installed }
+    bun: { status: not_installed }
+
+git:
+  initialized: true
+  branch: main
+  remote: https://github.com/kassiodiascarvalho-creator/clinica-costa-campos.git
+
+status: complete
