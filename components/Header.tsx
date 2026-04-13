@@ -22,7 +22,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 flex-shrink-0">
           <Image
-            src="https://i.imgur.com/hpUscFz.png"
+            src="https://i.imgur.com/Z6PPjCL.png"
             alt="Clínica Costa Campos"
             width={42}
             height={42}

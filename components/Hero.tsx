@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative w-full overflow-hidden bg-slate-900" style={{ height: 420 }}>
       {/* Foto da clínica cobrindo 100% da largura */}
       <Image
-        src="https://i.imgur.com/meEgJEA.jpeg"
+        src="https://i.imgur.com/NzQN4di.png"
         alt="Clínica Costa Campos — Itapipoca CE"
         fill
         className="object-cover object-center opacity-90"

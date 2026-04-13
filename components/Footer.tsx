@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <Image
-                src="https://i.imgur.com/hpUscFz.png"
+                src="https://i.imgur.com/Z6PPjCL.png"
                 alt="Clínica Costa Campos"
                 width={38}
                 height={38}
