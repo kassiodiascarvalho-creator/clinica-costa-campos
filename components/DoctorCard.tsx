@@ -73,8 +73,8 @@ export default function DoctorCard({ medico }: Props) {
         </div>
       </div>
 
-      {/* Botão de agendamento */}
-      {medico.agendamento_url ? (
+      {/* Botão de agendamento — só exibe se tiver link */}
+      {medico.agendamento_url && (
         <a
           href={medico.agendamento_url}
           target="_blank"
@@ -83,16 +83,6 @@ export default function DoctorCard({ medico }: Props) {
         >
           <CalendarCheck size={16} />
           Agendar Consulta
-        </a>
-      ) : (
-        <a
-          href="https://wa.me/558897242827"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-auto flex items-center justify-center gap-2 bg-gray-100 hover:bg-teal-50 text-teal-700 text-sm font-medium px-4 py-2.5 rounded-xl border border-gray-200 hover:border-teal-200 transition-colors"
-        >
-          <CalendarCheck size={16} />
-          Agendar via WhatsApp
         </a>
       )}
     </div>
