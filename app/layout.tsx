@@ -10,10 +10,6 @@ const geist = Geist({
 })
 
 export const metadata: Metadata = {
-  icons: {
-    icon: 'https://i.imgur.com/Z6PPjCL.png',
-    apple: 'https://i.imgur.com/Z6PPjCL.png',
-  },
   title: 'Clínica Costa Campos | Itapipoca - CE',
   description:
     'Clínica Costa Campos — 30 anos de história em Itapipoca-CE. Especialidades médicas, exames clínicos, Particular e Unimed. Agende sua consulta.',

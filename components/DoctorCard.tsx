@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { UserCircle } from 'lucide-react'
+import { UserCircle, CalendarCheck } from 'lucide-react'
 import type { Medico } from '@/lib/types'
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 export default function DoctorCard({ medico }: Props) {
   return (
     <div className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col gap-4 hover:shadow-md hover:border-teal-200 transition-all">
-      {/* Foto */}
+      {/* Foto + nome */}
       <div className="flex items-start gap-4">
         <div className="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden bg-gray-100 border-2 border-teal-100">
           {medico.foto_url ? (
@@ -51,7 +51,7 @@ export default function DoctorCard({ medico }: Props) {
       )}
 
       {/* Rodapé: valor + convênios */}
-      <div className="mt-auto pt-3 border-t border-gray-100 flex items-center justify-between">
+      <div className="pt-3 border-t border-gray-100 flex items-center justify-between">
         <div>
           {medico.valor_consulta ? (
             <span className="text-teal-700 font-semibold text-sm">
@@ -72,6 +72,29 @@ export default function DoctorCard({ medico }: Props) {
           ))}
         </div>
       </div>
+
+      {/* Botão de agendamento */}
+      {medico.agendamento_url ? (
+        <a
+          href={medico.agendamento_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-auto flex items-center justify-center gap-2 bg-teal-500 hover:bg-teal-400 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition-colors"
+        >
+          <CalendarCheck size={16} />
+          Agendar Consulta
+        </a>
+      ) : (
+        <a
+          href="https://wa.me/558897242827"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-auto flex items-center justify-center gap-2 bg-gray-100 hover:bg-teal-50 text-teal-700 text-sm font-medium px-4 py-2.5 rounded-xl border border-gray-200 hover:border-teal-200 transition-colors"
+        >
+          <CalendarCheck size={16} />
+          Agendar via WhatsApp
+        </a>
+      )}
     </div>
   )
 }

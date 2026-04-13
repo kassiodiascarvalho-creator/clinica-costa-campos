@@ -7,6 +7,7 @@ export interface Medico {
   convenios: string[]
   foto_url: string | null
   crm: string | null
+  agendamento_url: string | null
   ativo: boolean
   ordem: number
 }
