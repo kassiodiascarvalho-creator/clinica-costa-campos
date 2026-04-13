@@ -13,7 +13,7 @@ const items = [
     label: 'Exames',
   },
   {
-    href: 'https://wa.me/5585999999999',
+    href: 'https://wa.me/558897242827',
     icon: Phone,
     label: 'Agende sua Consulta',
     external: true,

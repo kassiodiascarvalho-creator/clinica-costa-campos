@@ -44,7 +44,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={15} className="text-teal-400 flex-shrink-0" />
-                <span>(85) 9 9999-9999</span>
+                <span>(88) 9 7242-827</span>
               </li>
               <li className="flex items-start gap-2">
                 <Clock size={15} className="text-teal-400 mt-0.5 flex-shrink-0" />
