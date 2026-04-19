@@ -4,6 +4,7 @@ import Hero from '@/components/Hero'
 import QuickAccess from '@/components/QuickAccess'
 import StatsStrip from '@/components/StatsStrip'
 import DoctorsSection from '@/components/DoctorsSection'
+import ExamsShowcase from '@/components/ExamsShowcase'
 import LocationCards from '@/components/LocationCards'
 import WhatsAppButton from '@/components/WhatsAppButton'
 
@@ -14,6 +15,7 @@ export default function Home() {
       <QuickAccess />
       <StatsStrip />
       <DoctorsSection />
+      <ExamsShowcase />
       <LocationCards />
       <WhatsAppButton />
     </main>
