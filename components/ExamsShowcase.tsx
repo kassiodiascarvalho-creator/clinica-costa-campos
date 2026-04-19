@@ -120,57 +120,6 @@ const exames = [
       </svg>
     ),
   },
-  {
-    titulo: 'Eletrocardiograma',
-    descricao: 'Registro da atividade elétrica do coração para detecção de arritmias e cardiopatias.',
-    cor: 'from-teal-500 to-teal-700',
-    icon: (
-      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
-        {/* Papel de ECG — fundo */}
-        <rect x="8" y="12" width="48" height="40" rx="4" fill="white" opacity="0.15"/>
-        {/* Grade leve */}
-        <line x1="8" y1="32" x2="56" y2="32" stroke="white" strokeWidth="1" opacity="0.3"/>
-        <line x1="22" y1="12" x2="22" y2="52" stroke="white" strokeWidth="1" opacity="0.2"/>
-        <line x1="36" y1="12" x2="36" y2="52" stroke="white" strokeWidth="1" opacity="0.2"/>
-        <line x1="50" y1="12" x2="50" y2="52" stroke="white" strokeWidth="1" opacity="0.2"/>
-        {/* Traçado ECG */}
-        <path
-          d="M8 32 L16 32 L20 32 L23 20 L26 44 L29 28 L32 28 L35 16 L38 48 L41 32 L44 32 L56 32"
-          stroke="white"
-          strokeWidth="3"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          fill="none"
-        />
-      </svg>
-    ),
-  },
-  {
-    titulo: 'Exames Laboratoriais',
-    descricao: 'Ampla gama de análises clínicas realizadas com tecnologia e rigor científico.',
-    cor: 'from-slate-400 to-slate-600',
-    icon: (
-      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
-        {/* Tubo de ensaio */}
-        <rect x="26" y="8" width="12" height="34" rx="3" fill="white" opacity="0.9"/>
-        {/* Fundo arredondado do tubo */}
-        <path d="M26 42 Q26 54 32 54 Q38 54 38 42" fill="white" opacity="0.9"/>
-        {/* Líquido interno */}
-        <rect x="27" y="34" width="10" height="10" fill="white" opacity="0.35"/>
-        <path d="M27 44 Q27 53 32 53 Q37 53 37 44" fill="white" opacity="0.35"/>
-        {/* Marcações laterais */}
-        <line x1="26" y1="20" x2="22" y2="20" stroke="white" strokeWidth="2" strokeLinecap="round" opacity="0.6"/>
-        <line x1="26" y1="28" x2="22" y2="28" stroke="white" strokeWidth="2" strokeLinecap="round" opacity="0.6"/>
-        <line x1="26" y1="36" x2="22" y2="36" stroke="white" strokeWidth="2" strokeLinecap="round" opacity="0.6"/>
-        {/* Tampa/rolha */}
-        <rect x="24" y="6" width="16" height="5" rx="2" fill="white" opacity="0.7"/>
-        {/* Bolhinhas (reação) */}
-        <circle cx="30" cy="46" r="1.5" fill="#10b981" opacity="0.8"/>
-        <circle cx="34" cy="43" r="1" fill="#10b981" opacity="0.7"/>
-        <circle cx="32" cy="49" r="1" fill="#10b981" opacity="0.6"/>
-      </svg>
-    ),
-  },
 ]
 
 export default function ExamsShowcase() {
@@ -182,7 +131,7 @@ export default function ExamsShowcase() {
           Contamos com estrutura completa para diagnóstico por imagem e análises clínicas.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {exames.map((exame) => (
             <div
               key={exame.titulo}
