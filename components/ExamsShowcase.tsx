@@ -2,7 +2,7 @@ const exames = [
   {
     titulo: 'Ultrassonografia',
     descricao: 'Diagnóstico por imagem em tempo real para órgãos abdominais, pélvicos, vasculares e obstétricos.',
-    cor: 'from-teal-500 to-teal-700',
+    cor: 'from-teal-600 to-teal-800',
     icon: (
       <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
         {/* Probe body */}
@@ -42,7 +42,7 @@ const exames = [
   {
     titulo: 'Mamografia',
     descricao: 'Rastreamento e diagnóstico precoce do câncer de mama com equipamento digital moderno.',
-    cor: 'from-pink-500 to-rose-600',
+    cor: 'from-teal-400 to-teal-600',
     icon: (
       <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
         {/* Placa superior */}
@@ -64,7 +64,7 @@ const exames = [
   {
     titulo: 'Raio X',
     descricao: 'Exame rápido e eficiente para avaliação óssea, pulmonar e de estruturas internas.',
-    cor: 'from-blue-500 to-blue-700',
+    cor: 'from-slate-500 to-slate-700',
     icon: (
       <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
         {/* Moldura do filme */}
@@ -88,7 +88,7 @@ const exames = [
   {
     titulo: 'Densitometria Óssea',
     descricao: 'Avaliação da densidade mineral óssea para prevenção e diagnóstico da osteoporose.',
-    cor: 'from-amber-500 to-orange-600',
+    cor: 'from-teal-700 to-teal-900',
     icon: (
       <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
         {/* Osso longo — formato clássico */}
@@ -110,20 +110,20 @@ const exames = [
   {
     titulo: 'Ecocardiograma',
     descricao: 'Ultrassom do coração que avalia estrutura e função cardíaca com precisão.',
-    cor: 'from-red-500 to-red-700',
+    cor: 'from-slate-600 to-slate-900',
     icon: (
       <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
         {/* Coração */}
         <path d="M32 52 C32 52 8 36 8 22 C8 14 14 10 20 10 C25 10 29 13 32 17 C35 13 39 10 44 10 C50 10 56 14 56 22 C56 36 32 52 32 52Z" fill="white" opacity="0.9"/>
         {/* Linha de ECG sobre o coração */}
-        <path d="M14 30 L20 30 L23 22 L27 38 L31 26 L34 30 L38 30 L41 25 L44 30 L50 30" stroke="#ef4444" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+        <path d="M14 30 L20 30 L23 22 L27 38 L31 26 L34 30 L38 30 L41 25 L44 30 L50 30" stroke="#134e4a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
       </svg>
     ),
   },
   {
     titulo: 'Eletrocardiograma',
     descricao: 'Registro da atividade elétrica do coração para detecção de arritmias e cardiopatias.',
-    cor: 'from-violet-500 to-violet-700',
+    cor: 'from-teal-500 to-teal-700',
     icon: (
       <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
         {/* Papel de ECG — fundo */}
@@ -148,7 +148,7 @@ const exames = [
   {
     titulo: 'Exames Laboratoriais',
     descricao: 'Ampla gama de análises clínicas realizadas com tecnologia e rigor científico.',
-    cor: 'from-emerald-500 to-emerald-700',
+    cor: 'from-slate-400 to-slate-600',
     icon: (
       <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-14 h-14">
         {/* Tubo de ensaio */}
