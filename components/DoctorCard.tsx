@@ -50,19 +50,10 @@ export default function DoctorCard({ medico }: Props) {
         </div>
       )}
 
-      {/* Rodapé: valor + convênios */}
-      <div className="pt-3 border-t border-gray-100 flex items-center justify-between">
-        <div>
-          {medico.valor_consulta ? (
-            <span className="text-teal-700 font-semibold text-sm">
-              R$ {medico.valor_consulta.toFixed(2).replace('.', ',')}
-            </span>
-          ) : (
-            <span className="text-gray-400 text-xs">Consultar valor</span>
-          )}
-        </div>
-        <div className="flex gap-1.5">
-          {medico.convenios?.map((conv) => (
+      {/* Rodapé: convênios */}
+      {medico.convenios && medico.convenios.length > 0 && (
+        <div className="pt-3 border-t border-gray-100 flex flex-wrap gap-1.5">
+          {medico.convenios.map((conv) => (
             <span
               key={conv}
               className="bg-gray-100 text-gray-500 text-xs px-2 py-0.5 rounded-full"
@@ -71,7 +62,7 @@ export default function DoctorCard({ medico }: Props) {
             </span>
           ))}
         </div>
-      </div>
+      )}
 
       {/* Botão de agendamento — só exibe se tiver link */}
       {medico.agendamento_url && (

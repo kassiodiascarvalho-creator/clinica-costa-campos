@@ -48,7 +48,7 @@ export default async function ExamesPage() {
     <main className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <h1 className="text-3xl font-bold text-slate-800 mb-2">Exames Clínicos</h1>
       <p className="text-gray-500 mb-4">
-        Atendemos Particular e Unimed. Valores sujeitos a alteração — consulte sempre na recepção.
+        Atendemos Particular e Unimed. Consulte disponibilidade na recepção.
       </p>
 
       {/* Índice rápido */}
@@ -77,7 +77,6 @@ export default async function ExamesPage() {
                 <thead>
                   <tr className="bg-gray-50 border-b border-gray-200">
                     <th className="text-left px-5 py-3 text-gray-600 font-semibold">Exame</th>
-                    <th className="text-left px-5 py-3 text-gray-600 font-semibold w-32">Valor</th>
                     <th className="text-left px-5 py-3 text-gray-600 font-semibold w-48">Convênios</th>
                   </tr>
                 </thead>
@@ -90,12 +89,6 @@ export default async function ExamesPage() {
                       }`}
                     >
                       <td className="px-5 py-3.5 text-slate-700">{exame.nome}</td>
-                      <td className="px-5 py-3.5 text-teal-700 font-medium">
-                        {exame.valor
-                          ? `R$ ${exame.valor.toFixed(2).replace('.', ',')}`
-                          : <span className="text-gray-400 text-xs">Consultar</span>
-                        }
-                      </td>
                       <td className="px-5 py-3.5">
                         <div className="flex flex-wrap gap-1">
                           {exame.convenios?.map((conv) => (
