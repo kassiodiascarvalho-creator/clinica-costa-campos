@@ -53,30 +53,33 @@ const exames = [
 
 export default function ExamsShowcase() {
   return (
-    <section className="bg-white py-14">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <h2 className="text-2xl font-bold text-slate-800 mb-1">Exames e Procedimentos</h2>
-        <p className="text-gray-500 text-sm mb-8">
+    <section className="bg-white py-16 sm:py-20">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-2">Exames e Procedimentos</h2>
+        <p className="text-gray-500 text-sm sm:text-base mb-10">
           Contamos com estrutura completa para diagnóstico por imagem e análises clínicas.
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {exames.map((exame) => {
             const Icon = exame.icon
             return (
               <div
                 key={exame.titulo}
-                className="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-all"
+                className="rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all"
               >
-                {/* Imagem / ícone colorido */}
-                <div className={`bg-gradient-to-br ${exame.cor} flex items-center justify-center`} style={{ height: 120 }}>
-                  <Icon size={44} className="text-white opacity-90" />
+                {/* Área colorida com ícone */}
+                <div
+                  className={`bg-gradient-to-br ${exame.cor} flex items-center justify-center`}
+                  style={{ height: 140 }}
+                >
+                  <Icon size={52} className="text-white opacity-90" />
                 </div>
 
                 {/* Texto */}
-                <div className="p-4 bg-white">
-                  <p className="font-semibold text-slate-800 text-sm">{exame.titulo}</p>
-                  <p className="text-gray-500 text-xs mt-1 leading-relaxed">{exame.descricao}</p>
+                <div className="p-5 bg-white">
+                  <p className="font-bold text-slate-800 text-base">{exame.titulo}</p>
+                  <p className="text-gray-500 text-sm mt-2 leading-relaxed">{exame.descricao}</p>
                 </div>
               </div>
             )
