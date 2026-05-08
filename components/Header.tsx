@@ -24,14 +24,14 @@ export default function Header() {
   ]
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-md'
-          : 'bg-white/80 backdrop-blur-sm shadow-sm'
-      }`}
-    >
-      <div className="max-w-6xl mx-auto px-5 sm:px-6 h-16 flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 pt-3">
+      <div
+        className={`max-w-6xl mx-auto px-5 sm:px-6 h-14 flex items-center justify-between rounded-2xl transition-all duration-300 ${
+          scrolled
+            ? 'bg-white/95 backdrop-blur-md shadow-lg'
+            : 'bg-white/85 backdrop-blur-sm shadow-md'
+        }`}
+      >
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 flex-shrink-0">
           <Image
@@ -91,8 +91,8 @@ export default function Header() {
       {/* Menu mobile */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
-        } bg-white/95 backdrop-blur-md border-t border-gray-100`}
+          isOpen ? 'max-h-64 opacity-100 mt-2' : 'max-h-0 opacity-0'
+        } bg-white/95 backdrop-blur-md rounded-2xl shadow-lg`}
       >
         <div className="px-5 py-3 flex flex-col gap-1">
           {links.map((link) => (
